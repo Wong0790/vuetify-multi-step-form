@@ -1,16 +1,17 @@
 <script lang="ts" setup>
-defineProps({
-  step: Number,
-  title: String,
-});
+import { Step } from "@/types/steps";
+
+defineProps<{
+  step: Step;
+}>();
 </script>
 
 <template>
   <div class="step-wrapper">
-    <div class="step-number">{{ step }}</div>
+    <div class="step-number">{{ step.id }}</div>
     <div class="step-info-wrapper">
-      <span>Step {{ step }}</span>
-      <h6>{{ title }}</h6>
+      <span>Step {{ step.id }}</span>
+      <h6>{{ step.title }}</h6>
     </div>
   </div>
 </template>

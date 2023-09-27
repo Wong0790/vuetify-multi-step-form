@@ -1,7 +1,7 @@
-<template>
-  <TestComponent />
-</template>
-
 <script lang="ts" setup>
-import TestComponent from "@/components/TestComponent.vue";
+import StepOne from "@/components/forms/StepOne.vue";
 </script>
+
+<template>
+  <StepOne />
+</template>

@@ -2,10 +2,12 @@
 import { ref } from "vue";
 import { useDisplay } from "vuetify";
 import DefaultView from "./View.vue";
+import type { Ref } from "vue";
+import { Step } from "@/types/steps";
 
 const { width } = useDisplay();
 
-const stepsList = ref([
+const stepsList: Ref<Step[]> = ref([
   {
     id: 1,
     title: "Your info",
@@ -32,7 +34,7 @@ const stepsList = ref([
         <StepButtonMobile
           v-for="step in stepsList"
           :key="step.id"
-          :step="step.id"
+          :id="step.id"
         />
       </div>
     </div>
@@ -46,8 +48,7 @@ const stepsList = ref([
           <StepButtonDesktop
             v-for="step in stepsList"
             :key="step.id"
-            :step="step.id"
-            :title="step.title"
+            :step="step"
           />
         </div>
       </div>

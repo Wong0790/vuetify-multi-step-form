@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-defineProps({
-  step: Number,
-});
+defineProps<{
+  id: number;
+}>();
 </script>
 <template>
-  <div class="step-number">{{ step }}</div>
+  <div class="step-number">{{ id }}</div>
 </template>
