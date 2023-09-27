@@ -6,6 +6,8 @@
 
 // Components
 import App from "./App.vue";
+import StepButtonDesktop from "./components/steps/StepButtonDesktop.vue";
+import StepButtonMobile from "./components/steps/StepButtonMobile.vue";
 
 // Composables
 import { createApp } from "vue";
@@ -17,6 +19,10 @@ import { registerPlugins } from "@/plugins";
 import "./styles/styles.css";
 
 const app = createApp(App);
+
+app
+  .component("StepButtonDesktop", StepButtonDesktop)
+  .component("StepButtonMobile", StepButtonMobile);
 
 registerPlugins(app);
 

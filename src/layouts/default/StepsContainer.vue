@@ -1,18 +1,39 @@
 <script lang="ts" setup>
+import { ref } from "vue";
 import { useDisplay } from "vuetify";
 import DefaultView from "./View.vue";
 
 const { width } = useDisplay();
+
+const stepsList = ref([
+  {
+    id: 1,
+    title: "Your info",
+  },
+  {
+    id: 2,
+    title: "Select plan",
+  },
+  {
+    id: 3,
+    title: "Add-ons",
+  },
+  {
+    id: 4,
+    title: "Summary",
+  },
+]);
 </script>
 
 <template>
   <div class="body-wrapper">
     <div class="sidebar-mobile">
       <div class="cell-steps-numbers-wrapper">
-        <div class="step-number">1</div>
-        <div class="step-number">2</div>
-        <div class="step-number">3</div>
-        <div class="step-number">4</div>
+        <StepButtonMobile
+          v-for="step in stepsList"
+          :key="step.id"
+          :step="step.id"
+        />
       </div>
     </div>
 
@@ -22,34 +43,12 @@ const { width } = useDisplay();
     >
       <div class="sidebar-desktop">
         <div class="desktop-steps-numbers-wrapper">
-          <div class="step-wrapper">
-            <div class="step-number">1</div>
-            <div class="step-info-wrapper">
-              <span>Step 1</span>
-              <h6>Your info</h6>
-            </div>
-          </div>
-          <div class="step-wrapper">
-            <div class="step-number">2</div>
-            <div class="step-info-wrapper">
-              <span>Step 2</span>
-              <h6>Select plan</h6>
-            </div>
-          </div>
-          <div class="step-wrapper">
-            <div class="step-number">3</div>
-            <div class="step-info-wrapper">
-              <span>Step 3</span>
-              <h6>Add-ons</h6>
-            </div>
-          </div>
-          <div class="step-wrapper">
-            <div class="step-number">4</div>
-            <div class="step-info-wrapper">
-              <span>Step 4</span>
-              <h6>Summary</h6>
-            </div>
-          </div>
+          <StepButtonDesktop
+            v-for="step in stepsList"
+            :key="step.id"
+            :step="step.id"
+            :title="step.title"
+          />
         </div>
       </div>
       <div class="">
