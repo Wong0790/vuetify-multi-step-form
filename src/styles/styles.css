@@ -11,7 +11,7 @@
 }
 
 .sidebar-mobile {
-  @apply block lg:hidden absolute top-0 right-0 w-full h-[172px];
+  @apply block lg:hidden h-[172px] w-full bg-cover bg-[url('@/assets/images/bg-sidebar-mobile.png')];
 }
 
 .sidebar-desktop {

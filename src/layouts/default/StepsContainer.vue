@@ -1,20 +1,21 @@
 <script lang="ts" setup>
 import { useDisplay } from "vuetify";
 import DefaultView from "./View.vue";
-import SidebarMobile from "@/components/svg/SidebarMobile.vue";
 
 const { width } = useDisplay();
 </script>
 
 <template>
   <div class="body-wrapper">
-    <SidebarMobile class="sidebar-mobile" />
-    <div class="cell-steps-numbers-wrapper">
-      <div class="step-number">1</div>
-      <div class="step-number">2</div>
-      <div class="step-number">3</div>
-      <div class="step-number">4</div>
+    <div class="sidebar-mobile">
+      <div class="cell-steps-numbers-wrapper">
+        <div class="step-number">1</div>
+        <div class="step-number">2</div>
+        <div class="step-number">3</div>
+        <div class="step-number">4</div>
+      </div>
     </div>
+
     <div
       class="setps-wrapper"
       :class="width < 1024 ? 'setps-wrapper-cell' : ''"
