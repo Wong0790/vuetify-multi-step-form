@@ -8,3 +8,8 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+
+@use "vuetify/settings" with (
+  $border-radius-root: 8px,
+  $text-field-border-radius: 8px
+);

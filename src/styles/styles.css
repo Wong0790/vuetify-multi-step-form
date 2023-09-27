@@ -15,7 +15,7 @@
 }
 
 .sidebar-desktop {
-  @apply hidden lg:block w-[274ps] h-[568px] bg-[url('@/assets/images/bg-sidebar-desktop.svg')];
+  @apply hidden lg:block w-[274px] h-[568px] bg-[url('@/assets/images/bg-sidebar-desktop.svg')];
 }
 
 .cell-steps-numbers-wrapper {
@@ -27,7 +27,7 @@
 }
 
 .setps-wrapper {
-  @apply max-w-[343px] min-h-[375px] lg:max-w-[940px] w-full p-4 bg-white h-fit rounded-[15px] grid grid-cols-2;
+  @apply max-w-[343px] min-h-[375px] lg:max-w-[940px] w-full p-4 bg-white h-fit rounded-[15px] grid grid-cols-[340px_minmax(490px,_1fr)_50px];
 }
 
 .setps-wrapper-cell {
@@ -52,4 +52,36 @@
 
 .step-info-wrapper h6 {
   @apply font-bold;
+}
+
+.form-wrapper {
+  @apply w-full px-2 py-6 max-w-[310px] lg:max-w-none;
+}
+
+.form-wrapper h1 {
+  @apply text-denim text-[37px] font-bold w-fit;
+}
+
+.form-wrapper h6 {
+  @apply text-grey text-[18px] max-w-[295px] lg:max-w-none;
+}
+
+.form-wrapper label {
+  @apply text-denim text-sm capitalize;
+}
+
+.v-text-field input {
+  @apply text-[16px] font-medium;
+}
+
+.v-text-field {
+  @apply mt-1;
+}
+
+.next-step-btn-wrapper {
+  @apply hidden lg:flex lg:items-end lg:justify-end lg:mt-8;
+}
+
+.floating-next-step-btn-wrapper {
+  @apply min-h-[72px] w-full absolute bottom-0 left-0 text-end bg-white lg:hidden p-4;
 }

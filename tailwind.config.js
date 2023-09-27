@@ -21,6 +21,7 @@ module.exports = {
         "red-errors": "#EE374A",
         "sky-blue": "#BEE2FD",
         "very-light-grey": "#F8F9FF",
+        "border-color": "#D6D9E6",
       },
     },
   },

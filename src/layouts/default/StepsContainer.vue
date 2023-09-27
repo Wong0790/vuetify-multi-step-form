@@ -2,12 +2,11 @@
 import { ref } from "vue";
 import { useDisplay } from "vuetify";
 import DefaultView from "./View.vue";
-import type { Ref } from "vue";
 import { Step } from "@/types/steps";
 
 const { width } = useDisplay();
 
-const stepsList: Ref<Step[]> = ref([
+const stepsList = ref<Step[]>([
   {
     id: 1,
     title: "Your info",
@@ -40,7 +39,7 @@ const stepsList: Ref<Step[]> = ref([
     </div>
 
     <div
-      class="setps-wrapper"
+      class="setps-wrapper mt-20"
       :class="width < 1024 ? 'setps-wrapper-cell' : ''"
     >
       <div class="sidebar-desktop">
@@ -52,9 +51,14 @@ const stepsList: Ref<Step[]> = ref([
           />
         </div>
       </div>
-      <div class="">
+      <div>
         <default-view />
       </div>
+    </div>
+    <div class="floating-next-step-btn-wrapper">
+      <v-btn variant="flat" color="#164A8A" size="x-large" class="text-none"
+        >Next Step</v-btn
+      >
     </div>
   </div>
 </template>
