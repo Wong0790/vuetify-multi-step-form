@@ -7,7 +7,7 @@
 }
 
 .body-wrapper {
-  @apply w-full h-full bg-[#EFF5FF] grid lg:place-items-center relative;
+  @apply w-full h-full bg-silver-bg grid lg:place-items-center relative;
 }
 
 .sidebar-mobile {
@@ -23,7 +23,7 @@
 }
 
 .step-number {
-  @apply text-white text-xl rounded-full border border-white px-3 py-1 hover:bg-[#BEE2FD] hover:border-[#BEE2FD] hover:text-[#022959] hover:cursor-pointer;
+  @apply text-white text-xl rounded-full border border-white px-3 py-1 hover:bg-sky-blue hover:border-sky-blue hover:text-denim hover:cursor-pointer;
 }
 
 .setps-wrapper {
@@ -47,7 +47,7 @@
 }
 
 .step-info-wrapper span {
-  @apply text-xs text-[#ABBCFF];
+  @apply text-xs text-light-blue;
 }
 
 .step-info-wrapper h6 {
