@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  @apply font-ubuntu font-normal;
+}
+
+.body-wrapper {
+  @apply w-full h-full bg-[#EFF5FF] grid lg:place-items-center relative;
+}
+
+.sidebar-mobile {
+  @apply block lg:hidden absolute top-0 right-0 w-full h-[172px];
+}
+
+.sidebar-desktop {
+  @apply hidden lg:block w-[274ps] h-[568px] bg-[url('@/assets/images/bg-sidebar-desktop.svg')];
+}
+
+.cell-steps-numbers-wrapper {
+  @apply flex lg:hidden z-40 gap-4 h-fit justify-center mt-8;
+}
+
+.step-number {
+  @apply text-white text-xl rounded-full border border-white px-3 py-1 hover:bg-[#BEE2FD] hover:border-[#BEE2FD] hover:text-[#022959] hover:cursor-pointer;
+}
+
+.setps-wrapper {
+  @apply max-w-[343px] min-h-[375px] lg:max-w-[940px] w-full p-4 bg-white h-fit rounded-[15px] grid grid-cols-2;
+}
+
+.setps-wrapper-cell {
+  @apply absolute top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
+
+.desktop-steps-numbers-wrapper {
+  @apply py-10 px-8 flex flex-col gap-8 w-fit;
+}
+
+.step-wrapper {
+  @apply flex items-center gap-4;
+}
+
+.step-info-wrapper {
+  @apply text-white uppercase;
+}
+
+.step-info-wrapper span {
+  @apply text-xs text-[#ABBCFF];
+}
+
+.step-info-wrapper h6 {
+  @apply font-bold;
+}
