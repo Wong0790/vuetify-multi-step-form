@@ -1,13 +1,11 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import { PersonalInfo } from "@/types/steps";
+import { useAppStore } from "@/store/app";
 
+const main = useAppStore();
 const valid = ref<boolean>(true);
-const form = ref<PersonalInfo>({
-  name: "",
-  email: "",
-  phone: "",
-});
+const form = ref<PersonalInfo>(main.firstStep);
 </script>
 
 <template>
@@ -59,11 +57,11 @@ const form = ref<PersonalInfo>({
               class="text-denim"
             ></v-text-field>
           </v-col>
-          <v-col cols="12" class="btns-wrapper">
-            <Footer :first="true" />
-          </v-col>
         </v-row>
       </v-container>
     </v-form>
+    <div class="btns-wrapper">
+      <Footer :first="true" :confirm="false" />
+    </div>
   </div>
 </template>

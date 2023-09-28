@@ -17,12 +17,10 @@ const valid = ref<boolean>(true);
             ><AddonsOption :selected="true" :addon="addon"
           /></v-col>
         </v-row>
-        <v-row>
-          <v-col cols="12" class="btns-wrapper mt-5">
-            <Footer :first="false" />
-          </v-col>
-        </v-row>
       </v-container>
     </v-form>
+    <div class="btns-wrapper">
+      <Footer :first="false" :confirm="false" />
+    </div>
   </div>
 </template>

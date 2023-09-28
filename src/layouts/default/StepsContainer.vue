@@ -1,9 +1,12 @@
 <script lang="ts" setup>
 import { ref } from "vue";
+import { useAppStore } from "@/store/app";
 import { useDisplay } from "vuetify";
 import DefaultView from "./View.vue";
 import { Step } from "@/types/steps";
 import { steps } from "@/data/stepsData";
+
+const main = useAppStore();
 
 const { width } = useDisplay();
 
@@ -39,8 +42,8 @@ const stepsList = ref<Step[]>(steps);
         <default-view />
       </div>
     </div>
-    <div class="floating-next-step-btn-wrapper">
-      <Footer :first="false" />
+    <div class="floating-next-step-btn-wrapper" v-show="main.step < 5">
+      <Footer :first="main.step === 1" :confirm="main.step === 4" />
     </div>
   </div>
 </template>

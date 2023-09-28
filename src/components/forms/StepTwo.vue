@@ -57,11 +57,11 @@ const options = computed(() =>
               >Yearly</span
             >
           </v-col>
-          <v-col cols="12" class="btns-wrapper">
-            <Footer />
-          </v-col>
         </v-row>
       </v-container>
     </v-form>
+    <div class="btns-wrapper">
+      <Footer :first="false" :confirm="false" />
+    </div>
   </div>
 </template>
