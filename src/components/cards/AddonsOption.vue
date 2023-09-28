@@ -15,7 +15,6 @@ const addonSelected = ref<number[]>([1, 2]);
     density="compact"
     :variant="selected ? 'flat' : 'outlined'"
     :color="selected ? '#F8F9FF' : '#D6D9E6'"
-    hover
     :class="selected ? 'card-selected' : ''"
   >
     <v-card-item class="pl-0">

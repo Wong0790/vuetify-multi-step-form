@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 defineProps<{
   first: boolean;
+  confirm: boolean;
 }>();
 </script>
 
@@ -17,8 +18,13 @@ defineProps<{
       v-if="!first"
       >Go Back</v-btn
     >
-    <v-btn variant="flat" color="#164A8A" size="x-large" class="text-none"
-      >Next Step</v-btn
+    <v-btn
+      variant="flat"
+      :color="!confirm ? '#164A8A' : '#483EFF'"
+      size="x-large"
+      class="text-none"
     >
+      {{ !confirm ? "Next Step" : "Confirm" }}
+    </v-btn>
   </div>
 </template>

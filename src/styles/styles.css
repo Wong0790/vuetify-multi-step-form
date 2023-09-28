@@ -133,3 +133,51 @@
 .addon-card-subtitle {
   @apply text-grey text-xs lg:text-sm;
 }
+
+.finishing-card {
+  @apply mt-10 px-6 py-4 bg-[#F8F9FF] rounded-lg divide-y divide-[#97979721];
+}
+
+.finishing-card-item {
+  @apply flex items-center justify-between pb-4;
+}
+
+.price-span {
+  @apply font-bold text-denim;
+}
+
+.finishing-card-title-wrapper {
+  @apply flex flex-col items-start w-fit;
+}
+
+.addons-summary-wrapper {
+  @apply flex flex-col gap-3 pt-4;
+}
+
+.addon-order-wrapper {
+  @apply flex items-center justify-between;
+}
+
+.finishing-card-title-wrapper h5 {
+  @apply font-medium text-denim;
+}
+
+.change-btn {
+  @apply p-0 text-sm text-grey underline decoration-solid;
+}
+
+.addon-order-wrapper h5 {
+  @apply text-grey;
+}
+
+.addon-order-wrapper span {
+  @apply text-denim;
+}
+
+.total-wrapper {
+  @apply px-6 py-4 mt-4;
+}
+
+.addon-order-wrapper h6 {
+  @apply text-xl font-bold text-purple;
+}
