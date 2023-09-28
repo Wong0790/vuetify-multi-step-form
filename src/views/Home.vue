@@ -3,11 +3,13 @@ import StepOne from "@/components/forms/StepOne.vue";
 import StepTwo from "@/components/forms/StepTwo.vue";
 import StepThree from "@/components/forms/StepThree.vue";
 import StepFour from "@/components/forms/StepFour.vue";
+import ThankYou from "@/components/forms/ThankYou.vue";
 </script>
 
 <template>
   <!-- <StepOne /> -->
   <!-- <StepTwo /> -->
   <!--   <StepThree /> -->
-  <StepFour />
+  <!-- <StepFour /> -->
+  <ThankYou />
 </template>

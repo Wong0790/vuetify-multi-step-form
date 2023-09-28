@@ -181,3 +181,19 @@
 .addon-order-wrapper h6 {
   @apply text-xl font-bold text-purple;
 }
+
+.thank-you-wrapper {
+  @apply flex justify-center h-[568px];
+}
+
+.inner-wrapper {
+  @apply max-w-[450px] pr-6 text-center my-auto;
+}
+
+.inner-wrapper h1 {
+  @apply text-4xl font-bold text-denim;
+}
+
+.inner-wrapper p {
+  @apply text-[16px] text-grey mt-3;
+}
