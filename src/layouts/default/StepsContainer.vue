@@ -3,27 +3,11 @@ import { ref } from "vue";
 import { useDisplay } from "vuetify";
 import DefaultView from "./View.vue";
 import { Step } from "@/types/steps";
+import { steps } from "@/data/stepsData";
 
 const { width } = useDisplay();
 
-const stepsList = ref<Step[]>([
-  {
-    id: 1,
-    title: "Your info",
-  },
-  {
-    id: 2,
-    title: "Select plan",
-  },
-  {
-    id: 3,
-    title: "Add-ons",
-  },
-  {
-    id: 4,
-    title: "Summary",
-  },
-]);
+const stepsList = ref<Step[]>(steps);
 </script>
 
 <template>

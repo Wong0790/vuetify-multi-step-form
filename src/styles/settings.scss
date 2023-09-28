@@ -11,5 +11,22 @@
 
 @use "vuetify/settings" with (
   $border-radius-root: 8px,
-  $text-field-border-radius: 8px
+  $text-field-border-radius: 8px,
+  $switch-inset-thumb-height: 14px,
+  $switch-inset-thumb-width: 14px,
+  $switch-inset-thumb-off-height: 14px,
+  $switch-inset-thumb-off-width: 14px,
+  $switch-inset-track-height: 24px,
+  $switch-inset-track-width: 38px,
+  $switch-thumb-background: white,
+  $switch-thumb-offset: -2px,
+  $switch-track-background: #022959,
+  $switch-track-opacity: 1,
+  $grid-breakpoints: (
+    "xs": 0,
+    "sm": 640px,
+    "md": 768px,
+    "lg": 1024px,
+    "xl": 1280px,
+  )
 );

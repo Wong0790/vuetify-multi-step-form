@@ -78,10 +78,34 @@
   @apply mt-1;
 }
 
-.next-step-btn-wrapper {
+.btns-wrapper {
   @apply hidden lg:flex lg:items-end lg:justify-end lg:mt-8;
 }
 
 .floating-next-step-btn-wrapper {
-  @apply min-h-[72px] w-full absolute bottom-0 left-0 text-end bg-white lg:hidden p-4;
+  @apply min-h-[72px] w-full absolute bottom-0 left-0 bg-white lg:hidden p-4;
+}
+
+.card-selected {
+  @apply outline outline-1 outline-[#483EFF];
+}
+
+.card-title {
+  @apply text-denim text-xs font-medium mt-4;
+}
+
+.card-subtitle {
+  @apply text-grey;
+}
+
+.option-plan-wrapper {
+  @apply bg-very-light-grey py-[13px] flex items-center justify-center rounded-lg mt-5;
+}
+
+.option-plan-wrapper span {
+  @apply text-base font-bold text-denim;
+}
+
+.switch-wrapper {
+  @apply mx-6;
 }
