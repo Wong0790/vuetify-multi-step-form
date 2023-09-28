@@ -18,7 +18,7 @@ const valid = ref<boolean>(true);
           /></v-col>
         </v-row>
         <v-row>
-          <v-col cols="12" class="btns-wrapper">
+          <v-col cols="12" class="btns-wrapper mt-5">
             <Footer :first="false" />
           </v-col>
         </v-row>
