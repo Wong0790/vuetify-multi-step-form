@@ -40,9 +40,7 @@ const stepsList = ref<Step[]>(steps);
       </div>
     </div>
     <div class="floating-next-step-btn-wrapper">
-      <v-btn variant="flat" color="#164A8A" size="x-large" class="text-none"
-        >Next Step</v-btn
-      >
+      <Footer />
     </div>
   </div>
 </template>

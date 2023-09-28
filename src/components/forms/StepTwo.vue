@@ -1,9 +1,12 @@
 <script lang="ts" setup>
 import { ref, computed } from "vue";
+import { useDisplay } from "vuetify";
 import { Plan } from "@/types/steps";
 import { month, year } from "@/data/stepsData";
-import OptionPlan from "@/components/cards/OptionPlan.vue";
+import OptionPlanDesktop from "@/components/cards/OptionPlanDesktop.vue";
+import OptionPlanMobile from "@/components/cards/OptionPlanMobile.vue";
 
+const { width } = useDisplay();
 const valid = ref<boolean>(true);
 const optionSelected = ref<string>("0");
 const optionsMonth: Plan[] = month;
@@ -20,9 +23,12 @@ const options = computed(() =>
       <v-container class="pl-0">
         <v-row>
           <v-col cols="12" lg="4" v-for="option in options" :key="option.id">
-            <OptionPlan :option="option" :selected="option.selected"
+            <component
+              :is="width < 1024 ? OptionPlanMobile : OptionPlanDesktop"
+              :option="option"
+              :selected="option.selected"
               ><component :is="option.icon"
-            /></OptionPlan>
+            /></component>
           </v-col>
         </v-row>
         <v-row>
@@ -48,22 +54,7 @@ const options = computed(() =>
             >
           </v-col>
           <v-col cols="12" class="btns-wrapper">
-            <div class="w-full flex items-center justify-between">
-              <v-btn
-                variant="text"
-                color="#9699AA"
-                size="x-large"
-                class="text-none px-0"
-                >Go Back</v-btn
-              >
-              <v-btn
-                variant="flat"
-                color="#164A8A"
-                size="x-large"
-                class="text-none"
-                >Next Step</v-btn
-              >
-            </div>
+            <Footer />
           </v-col>
         </v-row>
       </v-container>

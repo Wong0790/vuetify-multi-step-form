@@ -31,7 +31,7 @@
 }
 
 .setps-wrapper-cell {
-  @apply absolute top-72 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  @apply absolute top-7 left-1/2 transform -translate-x-1/2;
 }
 
 .desktop-steps-numbers-wrapper {
@@ -91,7 +91,7 @@
 }
 
 .card-title {
-  @apply text-denim text-xs font-medium mt-4;
+  @apply text-denim text-xs font-medium lg:mt-4;
 }
 
 .card-subtitle {
@@ -108,4 +108,8 @@
 
 .switch-wrapper {
   @apply mx-6;
+}
+
+.mobile-card-p {
+  @apply text-denim text-sm mt-0;
 }

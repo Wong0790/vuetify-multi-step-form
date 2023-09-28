@@ -15,8 +15,8 @@ defineProps<{
     :class="selected ? 'card-selected' : ''"
   >
     <template #prepend>
-      <v-avatar color="#FFAF7E" class="mt-3">
-        <slot><ArcadeIcon /></slot>
+      <v-avatar class="mt-3">
+        <slot />
       </v-avatar>
     </template>
     <v-card-item :class="option.type === 'year' ? 'pb-0' : ''">

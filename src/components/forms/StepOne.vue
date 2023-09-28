@@ -59,14 +59,8 @@ const form = ref<PersonalInfo>({
               class="text-denim"
             ></v-text-field>
           </v-col>
-          <v-col cols="12" class="next-step-btn-wrapper">
-            <v-btn
-              variant="flat"
-              color="#164A8A"
-              size="x-large"
-              class="text-none"
-              >Next Step</v-btn
-            >
+          <v-col cols="12" class="btns-wrapper">
+            <Footer :first="true" />
           </v-col>
         </v-row>
       </v-container>
