@@ -74,3 +74,27 @@ export const year = [
     type: "year",
   },
 ];
+
+export const addons = [
+  {
+    id: 1,
+    title: "Online service",
+    subtitle: "Access to multiplayer games",
+    priceMonth: "+$1/mo",
+    priceYear: "+$10/yr",
+  },
+  {
+    id: 2,
+    title: "Larger storage",
+    subtitle: "Extra 1TB of cloud save",
+    priceMonth: "+$2/mo",
+    priceYear: "+$20/yr",
+  },
+  {
+    id: 3,
+    title: "Customizable profile",
+    subtitle: "Custom theme on your profile",
+    priceMonth: "+$2/mo",
+    priceYear: "+$20/yr",
+  },
+];

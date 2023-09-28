@@ -87,7 +87,7 @@
 }
 
 .card-selected {
-  @apply outline outline-1 outline-[#483EFF];
+  @apply outline outline-1 outline-purple;
 }
 
 .card-title {
@@ -112,4 +112,24 @@
 
 .mobile-card-p {
   @apply text-denim text-sm mt-0;
+}
+
+.addon-card-wrapper {
+  @apply flex items-center justify-between;
+}
+
+.first-section {
+  @apply flex items-center;
+}
+
+.card-text {
+  @apply max-w-[100px] text-end text-purple text-sm lg:text-base;
+}
+
+.addon-card-title {
+  @apply text-denim text-[15px] lg:text-lg font-medium;
+}
+
+.addon-card-subtitle {
+  @apply text-grey text-xs lg:text-sm;
 }

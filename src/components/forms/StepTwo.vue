@@ -7,10 +7,14 @@ import OptionPlanDesktop from "@/components/cards/OptionPlanDesktop.vue";
 import OptionPlanMobile from "@/components/cards/OptionPlanMobile.vue";
 
 const { width } = useDisplay();
+
 const valid = ref<boolean>(true);
+
 const optionSelected = ref<string>("0");
+
 const optionsMonth: Plan[] = month;
 const optionsYear: Plan[] = year;
+
 const options = computed(() =>
   optionSelected.value === "0" ? optionsMonth : optionsYear
 );
@@ -20,7 +24,7 @@ const options = computed(() =>
     <h1>Select your plan</h1>
     <h6>You have the option of monthly or yearly billing.</h6>
     <v-form v-model="valid" class="mt-8">
-      <v-container class="pl-0">
+      <v-container class="px-0">
         <v-row>
           <v-col cols="12" lg="4" v-for="option in options" :key="option.id">
             <component

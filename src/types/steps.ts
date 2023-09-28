@@ -17,3 +17,11 @@ export type Plan = {
   selected: boolean;
   type: string;
 };
+
+export type Addon = {
+  id: number;
+  title: string;
+  subtitle: string;
+  priceMonth: string;
+  priceYear: string;
+};

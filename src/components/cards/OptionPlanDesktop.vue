@@ -3,7 +3,7 @@ import { Plan } from "@/types/steps";
 
 defineProps<{
   option: Plan;
-  selected: boolean;
+  selected: { type: boolean; default: false };
 }>();
 </script>
 

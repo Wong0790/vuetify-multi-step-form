@@ -40,7 +40,7 @@ const stepsList = ref<Step[]>(steps);
       </div>
     </div>
     <div class="floating-next-step-btn-wrapper">
-      <Footer />
+      <Footer :first="false" />
     </div>
   </div>
 </template>
