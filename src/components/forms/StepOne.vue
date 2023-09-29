@@ -32,7 +32,7 @@ const submit = async () => {
 <template>
   <div class="form-wrapper">
     <h1>Personal info</h1>
-    <h6>Please provide your name, email address, and phone number.</h6>
+    <h2>Please provide your name, email address, and phone number.</h2>
     <v-form>
       <v-container class="pl-0">
         <v-row>

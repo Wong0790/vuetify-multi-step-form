@@ -14,7 +14,7 @@ const main = useAppStore();
 <template>
   <div class="form-wrapper">
     <h1>Select your plan</h1>
-    <h6>You have the option of monthly or yearly billing.</h6>
+    <h2>You have the option of monthly or yearly billing.</h2>
     <v-form class="mt-8">
       <v-container class="px-0">
         <v-row>

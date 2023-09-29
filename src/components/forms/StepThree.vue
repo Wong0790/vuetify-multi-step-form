@@ -9,7 +9,7 @@ const main = useAppStore();
 <template>
   <div class="form-wrapper">
     <h1>Pick add-ons</h1>
-    <h6>Add-ons help enhance your gaming experience.</h6>
+    <h2>Add-ons help enhance your gaming experience.</h2>
     <v-form class="mt-8">
       <v-container class="pl-0">
         <v-row>

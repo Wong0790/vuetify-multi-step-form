@@ -66,7 +66,7 @@
   @apply text-denim text-[37px] font-bold w-fit;
 }
 
-.form-wrapper h6 {
+.form-wrapper h2 {
   @apply text-grey text-[18px] max-w-[295px] lg:max-w-none;
 }
 
@@ -166,7 +166,7 @@
   @apply flex items-center justify-between;
 }
 
-.finishing-card-title-wrapper h5 {
+.finishing-card-title-wrapper h3 {
   @apply font-medium text-denim;
 }
 
@@ -174,7 +174,7 @@
   @apply p-0 text-sm text-grey underline decoration-solid;
 }
 
-.addon-order-wrapper h5 {
+.addon-order-wrapper h3 {
   @apply text-grey;
 }
 
@@ -186,7 +186,7 @@
   @apply px-6 py-4 mt-4;
 }
 
-.addon-order-wrapper h6 {
+.total-price-span {
   @apply text-xl font-bold text-purple;
 }
 

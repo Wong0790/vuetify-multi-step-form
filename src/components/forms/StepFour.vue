@@ -27,11 +27,11 @@ const selectedPlan = computed<PlanResult>(() => {
 <template>
   <div class="form-wrapper">
     <h1>Finishing up</h1>
-    <h6>Double-check everything looks OK before confirming.</h6>
+    <h2>Double-check everything looks OK before confirming.</h2>
     <div class="finishing-card">
       <div class="finishing-card-item">
         <div class="finishing-card-title-wrapper">
-          <h5 class="finishing-card-title">{{ selectedPlan.planName }}</h5>
+          <h3 class="finishing-card-title">{{ selectedPlan.planName }}</h3>
           <v-btn
             variant="text"
             class="change-btn text-none"
@@ -47,12 +47,12 @@ const selectedPlan = computed<PlanResult>(() => {
     </div>
     <div class="total-wrapper">
       <div class="addon-order-wrapper">
-        <h5>
+        <h3>
           {{ main.monthly ? "Total (per month)" : "Total (per year)" }}
-        </h5>
-        <h6 class="total-price-span">
+        </h3>
+        <div class="total-price-span">
           {{ main.monthly ? `+$${main.total}/mo` : `+$${main.total}/yr` }}
-        </h6>
+        </div>
       </div>
     </div>
     <div class="btns-wrapper mt-20">
