@@ -5,6 +5,7 @@ import { useDisplay } from "vuetify";
 import DefaultView from "./View.vue";
 import { Step } from "@/types/steps";
 import { steps } from "@/data/stepsData";
+import bus from "vue3-eventbus";
 
 const main = useAppStore();
 
@@ -43,7 +44,17 @@ const stepsList = ref<Step[]>(steps);
       </div>
     </div>
     <div class="floating-next-step-btn-wrapper" v-show="main.step < 5">
-      <Footer :first="main.step === 1" :confirm="main.step === 4" />
+      <Footer :first="main.step === 1" :confirm="main.step === 4">
+        <v-btn
+          variant="flat"
+          color="#164A8A"
+          size="x-large"
+          class="text-none"
+          @click.prevent.stop="bus.emit('submit')"
+        >
+          Next Step
+        </v-btn>
+      </Footer>
     </div>
   </div>
 </template>

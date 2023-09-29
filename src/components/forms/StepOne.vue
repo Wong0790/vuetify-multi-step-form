@@ -4,6 +4,7 @@ import { PersonalInfo } from "@/types/steps";
 import { useAppStore } from "@/store/app";
 import { useVuelidate } from "@vuelidate/core";
 import { email, required } from "@vuelidate/validators";
+import bus from "vue3-eventbus";
 
 const main = useAppStore();
 const { nextStep } = main;
@@ -16,6 +17,10 @@ const rules = {
 };
 
 const v$ = useVuelidate(rules, form);
+
+bus.on("submit", () => {
+  submit();
+});
 
 const submit = async () => {
   if (await v$.value.$validate()) {

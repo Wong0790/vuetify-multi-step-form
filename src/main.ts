@@ -12,6 +12,7 @@ import ArcadeIcon from "./components/svg/ArcadeIcon.vue";
 import AdvanceIcon from "./components/svg/AdvanceIcon.vue";
 import ProIcon from "./components/svg/ProIcon.vue";
 import Footer from "./components/forms/Footer.vue";
+import eventBus from "vue3-eventbus";
 
 // Composables
 import { createApp } from "vue";
@@ -33,5 +34,7 @@ app
   .component("ProIcon", ProIcon);
 
 registerPlugins(app);
+
+app.use(eventBus);
 
 app.mount("#app");
