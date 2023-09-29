@@ -91,7 +91,7 @@
 }
 
 .bottom-next-step-btn-wrapper {
-  @apply min-h-[72px] w-full mt-[540px] bg-white lg:hidden p-4;
+  @apply min-h-[72px] w-full mt-[580px] bg-white lg:hidden p-4;
 }
 
 .card-selected {
