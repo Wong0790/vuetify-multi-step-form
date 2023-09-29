@@ -90,6 +90,10 @@
   @apply min-h-[72px] w-full absolute bottom-0 left-0 bg-white lg:hidden p-4;
 }
 
+.bottom-next-step-btn-wrapper {
+  @apply min-h-[72px] w-full mt-[540px] bg-white lg:hidden p-4;
+}
+
 .card-selected {
   @apply outline outline-1 outline-purple;
 }

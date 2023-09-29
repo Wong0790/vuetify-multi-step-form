@@ -9,7 +9,7 @@ import bus from "vue3-eventbus";
 
 const main = useAppStore();
 
-const { width } = useDisplay();
+const { width, height } = useDisplay();
 
 const stepsList = ref<Step[]>(steps);
 </script>
@@ -43,7 +43,14 @@ const stepsList = ref<Step[]>(steps);
         <default-view />
       </div>
     </div>
-    <div class="floating-next-step-btn-wrapper" v-show="main.step < 5">
+    <div
+      :class="
+        height <= 680
+          ? 'bottom-next-step-btn-wrapper'
+          : 'floating-next-step-btn-wrapper'
+      "
+      v-show="main.step < 5"
+    >
       <Footer :first="main.step === 1" :confirm="main.step === 4">
         <v-btn
           variant="flat"
