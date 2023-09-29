@@ -45,7 +45,7 @@ const stepsList = ref<Step[]>(steps);
     </div>
     <div
       :class="
-        height <= 680
+        height <= 760
           ? 'bottom-next-step-btn-wrapper'
           : 'floating-next-step-btn-wrapper'
       "
