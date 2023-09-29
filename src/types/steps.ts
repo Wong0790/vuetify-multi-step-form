@@ -12,16 +12,20 @@ export type PersonalInfo = {
 export type Plan = {
   id: number;
   title: string;
-  subtitle: string;
+  priceMonth: number;
+  priceYear: number;
   icon: any;
-  selected: boolean;
-  type: string;
 };
 
 export type Addon = {
   id: number;
   title: string;
   subtitle: string;
-  priceMonth: string;
-  priceYear: string;
+  priceMonth: number;
+  priceYear: number;
+};
+
+export type PlanResult = {
+  planName: string;
+  planPrice: string;
 };

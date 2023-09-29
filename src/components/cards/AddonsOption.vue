@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import { ref } from "vue";
 import { Addon } from "@/types/steps";
+import { useAppStore } from "@/store/app";
 
 defineProps<{
   addon: Addon;
   selected: boolean;
 }>();
 
-const addonSelected = ref<number[]>([1, 2]);
+const main = useAppStore();
 </script>
 
 <template>
@@ -21,7 +21,7 @@ const addonSelected = ref<number[]>([1, 2]);
       <div class="addon-card-wrapper">
         <div class="first-section">
           <v-checkbox
-            v-model="addonSelected"
+            v-model="main.addonsSelected"
             :value="addon.id"
             hide-details
             color="#483EFF"
@@ -32,7 +32,13 @@ const addonSelected = ref<number[]>([1, 2]);
           </div>
         </div>
 
-        <p class="card-text">{{ addon.priceMonth }}</p>
+        <p class="card-text">
+          {{
+            main.monthly
+              ? `+$${addon.priceMonth}/mo`
+              : `+$${addon.priceYear}/yr`
+          }}
+        </p>
       </div>
     </v-card-item>
   </v-card>

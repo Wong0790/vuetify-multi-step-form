@@ -1,8 +1,9 @@
 import ArcadeIcon from "@/components/svg/ArcadeIcon.vue";
 import AdvanceIcon from "@/components/svg/AdvanceIcon.vue";
 import ProIcon from "@/components/svg/ProIcon.vue";
+import { Plan, Addon, Step } from "@/types/steps";
 
-export const steps = [
+export const steps: Step[] = [
   {
     id: 1,
     title: "Your info",
@@ -21,80 +22,50 @@ export const steps = [
   },
 ];
 
-export const month = [
+export const plans: Plan[] = [
   {
     id: 1,
     title: "Arcade",
-    subtitle: "$9/mo",
+    priceMonth: 9,
+    priceYear: 90,
     icon: ArcadeIcon,
-    selected: true,
-    type: "month",
   },
   {
     id: 2,
     title: "Advanced",
-    subtitle: "$12/mo",
+    priceMonth: 12,
+    priceYear: 120,
     icon: AdvanceIcon,
-    selected: false,
-    type: "month",
   },
   {
     id: 3,
     title: "Pro",
-    subtitle: "$15/mo",
+    priceMonth: 15,
+    priceYear: 150,
     icon: ProIcon,
-    selected: false,
-    type: "month",
   },
 ];
 
-export const year = [
-  {
-    id: 1,
-    title: "Arcade",
-    subtitle: "$90/yr",
-    icon: ArcadeIcon,
-    selected: true,
-    type: "year",
-  },
-  {
-    id: 2,
-    title: "Advanced",
-    subtitle: "$120/yr",
-    icon: AdvanceIcon,
-    selected: false,
-    type: "year",
-  },
-  {
-    id: 3,
-    title: "Pro",
-    subtitle: "$150/yr",
-    icon: ProIcon,
-    selected: false,
-    type: "year",
-  },
-];
-
-export const addons = [
+export const addons: Addon[] = [
   {
     id: 1,
     title: "Online service",
     subtitle: "Access to multiplayer games",
-    priceMonth: "+$1/mo",
-    priceYear: "+$10/yr",
+    priceMonth: 1,
+    priceYear: 10,
   },
   {
     id: 2,
     title: "Larger storage",
     subtitle: "Extra 1TB of cloud save",
-    priceMonth: "+$2/mo",
-    priceYear: "+$20/yr",
+    priceMonth: 2,
+    priceYear: 20,
   },
   {
     id: 3,
     title: "Customizable profile",
     subtitle: "Custom theme on your profile",
-    priceMonth: "+$2/mo",
-    priceYear: "+$20/yr",
+    priceMonth: 2,
+    priceYear: 20,
   },
 ];

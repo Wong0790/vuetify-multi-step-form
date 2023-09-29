@@ -201,3 +201,11 @@
 .inner-wrapper p {
   @apply text-[16px] text-grey mt-3;
 }
+
+.input-label-error-wrapper {
+  @apply flex items-center justify-between;
+}
+
+.input-label-error-wrapper {
+  @apply text-sm font-bold text-red-errors;
+}

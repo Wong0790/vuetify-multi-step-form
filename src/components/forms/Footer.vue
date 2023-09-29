@@ -24,14 +24,16 @@ const { nextStep, goBack } = main;
       @click="goBack"
       >Go Back</v-btn
     >
-    <v-btn
-      variant="flat"
-      :color="!confirm ? '#164A8A' : '#483EFF'"
-      size="x-large"
-      class="text-none"
-      @click="nextStep(main.followingStep)"
-    >
-      {{ !confirm ? "Next Step" : "Confirm" }}
-    </v-btn>
+    <slot>
+      <v-btn
+        variant="flat"
+        :color="!confirm ? '#164A8A' : '#483EFF'"
+        size="x-large"
+        class="text-none"
+        @click="nextStep(main.followingStep)"
+      >
+        {{ !confirm ? "Next Step" : "Confirm" }}
+      </v-btn>
+    </slot>
   </div>
 </template>
