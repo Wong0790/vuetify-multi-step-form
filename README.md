@@ -1,22 +1,24 @@
 # Frontend Mentor - Multi-step form solution
 
-This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). realistic projects.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
-- [Essentials](#essentials)
-  - [Project setup](#project-setup)
-  - [Compiles and hot-reloads for development](#compiles-and-hot-reloads-for-development)
-  - [Compiles and minifies for production](#compiles-and-minifies-for-production)
-  - [Lints and fixes files](#lints-and-fixes-files)
-  - [Customize configuration](#customize-configuration)
+- [Frontend Mentor - Multi-step form solution](#frontend-mentor---multi-step-form-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+  - [Author](#author)
+  - [essentials](#essentials)
+    - [Project setup](#project-setup)
+      - [Compiles and hot-reloads for development](#compiles-and-hot-reloads-for-development)
+      - [Compiles and minifies for production](#compiles-and-minifies-for-production)
+      - [Lints and fixes files](#lints-and-fixes-files)
+      - [Customize configuration](#customize-configuration)
 
 ## Overview
 
@@ -39,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Wong0790/vuetify-multi-step-form)
-- Live Site URL: [Add live site URL here](https://vuetify-multi-step-form.netlify.app/)
+- Solution URL: [vuetify-multi-step-form-code](https://github.com/Wong0790/vuetify-multi-step-form)
+- Live Site URL: [vuetify-multi-step-form.netlify.app](https://wong0790-vuetify-multi-step-form.netlify.app/)
 
 ## My process
 
@@ -61,6 +63,7 @@ Users should be able to:
 - Website - [Anneris Eloisa Wong Jorge](https://www.your-site.com)
 - Frontend Mentor - [@Wong0790](https://www.frontendmentor.io/profile/Wong0790)
 - Linkedin - [Anneris Wong Jorge](https://www.linkedin.com/in/anneris-wong-jorge-257948104)
+- Github - [Anneris Wong Jorge](https://github.com/Wong0790)
 
 ## essentials
 
