@@ -60,7 +60,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Anneris Eloisa Wong Jorge](https://www.your-site.com)
 - Frontend Mentor - [@Wong0790](https://www.frontendmentor.io/profile/Wong0790)
 - Linkedin - [Anneris Wong Jorge](https://www.linkedin.com/in/anne-wong0790)
 - Github - [Anneris Wong Jorge](https://github.com/Wong0790)
